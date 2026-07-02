@@ -1,0 +1,178 @@
+/* Reset CSS */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+.coast {
+    background-color: bisque;
+    height: 120px;
+}
+
+.sea {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    background: skyblue;
+}
+
+.hook {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+    display: none;
+    animation: none;
+    width: 46px;
+    height: 46px;
+}
+
+.hook img {
+    display: block;
+}
+
+
+.fish {
+    position:absolute
+}
+
+
+.carp {
+    width: 100px;
+    bottom: 120px;
+    animation: carpMove 5s linear infinite;
+    animation-delay: -0s;
+}
+
+.carp img {
+    width: 100%;
+    display: block;
+    animation: carpFlip 5s linear infinite;
+    animation-delay: -0s;
+}
+
+.puffer {
+    width: 80px;
+    bottom: 150px;
+    animation: carpMove 5s linear infinite;
+    animation-delay: -0s;
+}
+
+.puffer img {
+    width: 100%;
+    display: block;
+    animation: carpFlip 5s linear infinite;
+    animation-delay: -0s;
+}
+
+.marlin {
+    width: 80px;
+    bottom: 150px;
+    animation: carpMove 5s linear infinite;
+    animation-delay: -0s;
+}
+
+.marlin img {
+    width: 100%;
+    display: block;
+    animation: carpFlip 3s linear infinite;
+    animation-delay: -0s;
+}
+
+@keyframes carpMove {
+    0% {
+        left: -100px;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: -100px;
+    }
+}
+
+@keyframes carpFlip {
+    0%, 49.9% {
+        transform: scaleX(-1);
+    }
+
+    50%, 99.9% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(-1);
+    }
+}
+
+/* @keyframes hookMove {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: calc(100% - 46px);
+    }
+
+    100% {
+        top: 0;
+    }
+}
+ */
