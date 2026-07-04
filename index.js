@@ -47,7 +47,7 @@ const fishTypes = [
         className: "goldfish",
         src: "./img/goldfish.svg",
         score: 25,
-        speed: 3,
+        speed: 3.6,
         depth: 480,
         width: 60
     },
