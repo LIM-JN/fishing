@@ -56,12 +56,40 @@ table {
     border-spacing: 0;
 }
 
-
-
 .coast {
     background-color: bisque;
     height: 120px;
+    padding:10px;
 }
+
+.score {
+    display: inline-block;
+    width: 200px;
+    height: 42px;
+}
+
+.timer {
+    display: inline-block;
+    width: 200px;
+    height: 42px;
+}
+
+.start {
+    padding:6px 20px;
+    color:white;
+    background-color: #992244;
+    display: inline-block;
+    margin-left: 30px;
+    border-radius: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.14s;
+}
+
+.start:hover {
+    background-color: #cc1144;
+}
+
 
 .sea {
     position: relative;
@@ -91,48 +119,30 @@ table {
     position:absolute
 }
 
+.fish img {
+    width: 100%;
+    display: block;
+}
+
 
 .carp {
     width: 100px;
     bottom: 120px;
-    animation: carpMove 5s linear infinite;
-    animation-delay: -0s;
 }
 
-.carp img {
-    width: 100%;
-    display: block;
-    animation: carpFlip 5s linear infinite;
-    animation-delay: -0s;
-}
+
 
 .puffer {
     width: 80px;
     bottom: 150px;
-    animation: carpMove 5s linear infinite;
-    animation-delay: -0s;
 }
 
-.puffer img {
-    width: 100%;
-    display: block;
-    animation: carpFlip 5s linear infinite;
-    animation-delay: -0s;
-}
 
 .marlin {
     width: 80px;
     bottom: 150px;
-    animation: carpMove 5s linear infinite;
-    animation-delay: -0s;
 }
 
-.marlin img {
-    width: 100%;
-    display: block;
-    animation: carpFlip 3s linear infinite;
-    animation-delay: -0s;
-}
 
 @keyframes carpMove {
     0% {
