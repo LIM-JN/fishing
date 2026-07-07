@@ -112,6 +112,23 @@ table {
     height: 46px;
 }
 
+.line {
+    width: 2px;
+    height: 700px;
+    top: -700px;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+}
+
+.player-hook .line {
+    background: #444;
+}
+
+.ai-hook .line {
+    background: #d9534f;
+}
+
 .hook img {
     display: block;
 }

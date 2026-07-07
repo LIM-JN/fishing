@@ -180,7 +180,7 @@ function update() {
 
 function checkCollision() {
     const fishes = document.querySelectorAll(".sea > .fish");
-    const hookRect = hook.getBoundingClientRect();
+    const hookRect = document.querySelector(".hook-head").getBoundingClientRect();
 
     for (const fish of fishes) {
         const fishRect = fish.getBoundingClientRect();
@@ -300,7 +300,7 @@ function startGame() {
 
     moveFishes();
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 7; i++) {
         setTimeout(spawnFish, i * 200);
     }
 
